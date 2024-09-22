@@ -190,7 +190,7 @@ int tall_resolve(puyos_t *floors, int num_layers, int tsu_rules, int has_garbage
         total_score += score;
     }
     *chain_out = chain;
-    return total_score;
+    return chain;
 }
 
 int tall_clear_groups_and_garbage(puyos_t *floors, int num_layers, int chain_number, int tsu_rules, int has_garbage) {
