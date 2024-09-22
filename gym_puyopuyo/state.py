@@ -238,7 +238,7 @@ class State(object):
         self.play_deal(x, orientation)
         reward = self.field.resolve()[0]
         if isinstance(self.field, TallField) and not any(self.field.data):
-            reward += 8500
+            reward += 0
         if self.TESTING:
             assert (self.field.sane)
         return reward
